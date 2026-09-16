@@ -42,7 +42,7 @@ function Dashboard() {
   const fetchExpenses = useCallback(async () => {
     try {
       const response = await fetch(
-        "http://localhost:3000/api/expenses",
+        "https://expense-tracker-8u22.onrender.com/api/expenses",
         {
           headers: {
             Authorization: `Bearer ${token}`
@@ -95,7 +95,7 @@ useEffect(() => {
 
     try {
       const response = await fetch(
-        "http://localhost:3000/api/expenses",
+        "https://expense-tracker-8u22.onrender.com/api/expenses",
         {
           method: "POST",
 
@@ -143,7 +143,7 @@ useEffect(() => {
 
     try {
       const response = await fetch(
-        `http://localhost:3000/api/expenses/${id}`,
+         `https://expense-tracker-8u22.onrender.com/api/expenses/${id}`,
         {
           method: "DELETE",
 
